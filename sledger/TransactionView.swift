@@ -36,6 +36,7 @@ struct TransactionView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionView(
             transaction: Transaction(
+                line: 68,
                 date: "2022-10-01",
                 description: "descriptive stuff",
                 dispositions: [

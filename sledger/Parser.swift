@@ -11,6 +11,7 @@ let file = ".hledger.journal"
 
 func getExampleTransaction() -> Transaction {
     return Transaction(
+        line: 4,
                 date: "2022-10-01",
                 description: "descriptive stuff",
                 dispositions: [
@@ -25,6 +26,7 @@ func getTransactions() -> [Transaction] {
     
     for i in (0 ..< 10) {
         let newTransaction = Transaction(
+            line: i*4,
             date: "2022-11-0" + String(i),
             description: "this is transaction #" + String(i),
             dispositions: [

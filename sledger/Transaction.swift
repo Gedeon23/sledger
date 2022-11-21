@@ -18,6 +18,7 @@ struct Disposition: Hashable, Codable {
 }
 
 struct Transaction: Hashable, Codable {
+    var line: Int
     var date: String
     var description: String
     var dispositions: [Disposition]

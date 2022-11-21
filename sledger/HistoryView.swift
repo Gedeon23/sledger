@@ -10,17 +10,19 @@ import SwiftUI
 
 struct HistoryView: View {
     var body: some View {
-        HStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("History")
-                .font(.headline)
-        }
-        .padding()
-        
-        List(getTransactions(), id: \.self) { transaction in
-            TransactionView(transaction: transaction)
+        VStack {
+            HStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("History")
+                    .font(.headline)
+            }
+            .padding()
+            
+            List(getTransactions(), id: \.self) { transaction in
+                TransactionView(transaction: transaction)
+            }
         }
         
     }
