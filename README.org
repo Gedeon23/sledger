@@ -1,0 +1,6 @@
+#+title: SLEDGER
+#+author: Gedeon
+
+iOS app that integrates with plain text accounting tools (mainly hledger)
+
+still very early development and it might take a while because I'm still learning swift
