@@ -15,9 +15,13 @@ struct ContentView: View {
                 .tabItem {
                     Label("History", systemImage: "timer")
                 }
+            TransactionCreationView()
+                .tabItem {
+                    Label("", systemImage: "plus.circle.fill")
+                }
             BudgetView()
                 .tabItem {
-                    Label("Budget", systemImage: "gear")
+                    Label("Budget", systemImage: "chart.bar.xaxis")
                 }
         }
     }

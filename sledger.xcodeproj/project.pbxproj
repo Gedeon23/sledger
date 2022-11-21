@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72631BFC292C438600463D17 /* TransactionCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72631BFB292C438600463D17 /* TransactionCreationView.swift */; };
 		7278FB4629284D7E00FDE5B9 /* sledgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7278FB4529284D7E00FDE5B9 /* sledgerApp.swift */; };
 		7278FB4829284D7E00FDE5B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7278FB4729284D7E00FDE5B9 /* ContentView.swift */; };
 		7278FB4A29284D8000FDE5B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7278FB4929284D8000FDE5B9 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72631BFB292C438600463D17 /* TransactionCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCreationView.swift; sourceTree = "<group>"; };
 		7278FB4229284D7E00FDE5B9 /* sledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7278FB4529284D7E00FDE5B9 /* sledgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sledgerApp.swift; sourceTree = "<group>"; };
 		7278FB4729284D7E00FDE5B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				7278FB4729284D7E00FDE5B9 /* ContentView.swift */,
+				72631BFB292C438600463D17 /* TransactionCreationView.swift */,
 				7278FB7529290F0C00FDE5B9 /* HistoryView.swift */,
 				7278FB77292A5AB600FDE5B9 /* BudgetView.swift */,
 				7278FB79292A786500FDE5B9 /* TransactionDetailView.swift */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7278FB4829284D7E00FDE5B9 /* ContentView.swift in Sources */,
+				72631BFC292C438600463D17 /* TransactionCreationView.swift in Sources */,
 				7278FB78292A5AB600FDE5B9 /* BudgetView.swift in Sources */,
 				7278FB4629284D7E00FDE5B9 /* sledgerApp.swift in Sources */,
 				7278FB7A292A786500FDE5B9 /* TransactionDetailView.swift in Sources */,
