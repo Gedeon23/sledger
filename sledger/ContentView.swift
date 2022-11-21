@@ -10,11 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        
-        NavigationView {
-            NavigationLink(destination: HistoryView()) {
-                    Text("History")
-            }
+        TabView {
+            HistoryView()
+                .tabItem {
+                    Label("History", systemImage: "timer")
+                }
+            BudgetView()
+                .tabItem {
+                    Label("Budget", systemImage: "gear")
+                }
         }
     }
 }
