@@ -9,6 +9,8 @@ import SwiftUI
 
 
 struct HistoryView: View {
+    @ObservedObject var journalData: JournalData
+    
     var body: some View {
         VStack {
             HStack {
@@ -20,7 +22,7 @@ struct HistoryView: View {
             }
             .padding()
             
-            List(getTransactions(), id: \.self) { transaction in
+            List(journalData.transactions, id: \.self) { transaction in
                 TransactionView(transaction: transaction)
             }
         }
@@ -30,6 +32,6 @@ struct HistoryView: View {
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryView()
+        HistoryView(journalData: JournalData())
     }
 }

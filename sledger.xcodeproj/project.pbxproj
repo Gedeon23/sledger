@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72551BF8292C4F0E008AFF90 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72551BF7292C4F0E008AFF90 /* JournalData.swift */; };
 		72631BFC292C438600463D17 /* TransactionCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72631BFB292C438600463D17 /* TransactionCreationView.swift */; };
 		7278FB4629284D7E00FDE5B9 /* sledgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7278FB4529284D7E00FDE5B9 /* sledgerApp.swift */; };
 		7278FB4829284D7E00FDE5B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7278FB4729284D7E00FDE5B9 /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72551BF7292C4F0E008AFF90 /* JournalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalData.swift; sourceTree = "<group>"; };
 		72631BFB292C438600463D17 /* TransactionCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCreationView.swift; sourceTree = "<group>"; };
 		7278FB4229284D7E00FDE5B9 /* sledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7278FB4529284D7E00FDE5B9 /* sledgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sledgerApp.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				7278FB79292A786500FDE5B9 /* TransactionDetailView.swift */,
 				7278FB712928D2A000FDE5B9 /* TransactionView.swift */,
 				7278FB4529284D7E00FDE5B9 /* sledgerApp.swift */,
+				72551BF7292C4F0E008AFF90 /* JournalData.swift */,
 				7278FB732928D30800FDE5B9 /* Transaction.swift */,
 				7278FB7B292A7B3600FDE5B9 /* Parser.swift */,
 				7278FB4929284D8000FDE5B9 /* Assets.xcassets */,
@@ -285,6 +288,7 @@
 				7278FB7A292A786500FDE5B9 /* TransactionDetailView.swift in Sources */,
 				7278FB7C292A7B3600FDE5B9 /* Parser.swift in Sources */,
 				7278FB7629290F0C00FDE5B9 /* HistoryView.swift in Sources */,
+				72551BF8292C4F0E008AFF90 /* JournalData.swift in Sources */,
 				7278FB742928D30800FDE5B9 /* Transaction.swift in Sources */,
 				7278FB722928D2A000FDE5B9 /* TransactionView.swift in Sources */,
 			);
