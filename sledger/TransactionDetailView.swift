@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TransactionDetailView: View {
-    var transaction: Transaction
+    @ObservedObject var transaction: Transaction
     
     // I think I'm gonna leave the comments for now
     // not part of MVP

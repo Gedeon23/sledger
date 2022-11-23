@@ -11,23 +11,23 @@ struct TransactionView: View {
     var transaction: Transaction
     
     var body: some View {
-        NavigationLink(destination: TransactionDetailView(transaction: transaction)) {
-            VStack(alignment: .leading) {
-                HStack {
-                    Text(transaction.date)
-                        .font(.headline)
-                    Text(transaction.description)
-                        .font(.subheadline)
-                }
-
-                ForEach(transaction.dispositions, id: \.self) { dispo in
+            NavigationLink(destination: TransactionDetailView(transaction: transaction)) {
+                VStack(alignment: .leading) {
                     HStack {
-                        Text(dispo.account)
-                        Spacer()
-                        Text(String(dispo.amount))
+                        Text(transaction.date)
+                            .font(.headline)
+                        Text(transaction.description)
+                            .font(.subheadline)
                     }
-                }
-            }.padding()
+                    
+                    ForEach(transaction.dispositions, id: \.account) { dispo in
+                        HStack {
+                            Text(dispo.account)
+                            Spacer()
+                            Text(String(dispo.amount))
+                        }
+                    }
+                }.padding()
         }
     }
 }

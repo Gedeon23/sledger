@@ -17,12 +17,23 @@ struct Disposition: Hashable, Codable {
     var amount: Float
 }
 
-struct Transaction: Hashable, Codable {
-    var line: Int
-    var date: String
-    var description: String
-    var dispositions: [Disposition]
-    var comments: [Comment]?
+class Transaction: ObservableObject, Identifiable {
+    static func == (lhs: Transaction, rhs: Transaction) -> Bool {
+        return lhs.line == rhs.line
+    }
+    
+    @Published var line: Int
+    @Published var date: String
+    @Published var description: String
+    @Published var dispositions: [Disposition]
+    @Published var comments: [Comment]?
+    
+    init(line: Int, date: String, description: String, dispositions: [Disposition]) {
+        self.line = line
+        self.date = date
+        self.description = description
+        self.dispositions = dispositions
+    }
     
     public func verify() -> Bool {
         var sum: Float = 0
@@ -34,6 +45,14 @@ struct Transaction: Hashable, Codable {
         } else {
             return false
         }
+    }
+}
+
+class Transactions: ObservableObject {
+    @Published var transactions: [Transaction]
+    
+    init(transactions: [Transaction]) {
+        self.transactions = transactions
     }
 }
 
