@@ -22,8 +22,10 @@ struct HistoryView: View {
             }
             .padding()
             
-            List(journalData.transactions, id: \.self) { transaction in
-                TransactionView(transaction: transaction)
+            NavigationView(){
+                List(journalData.transactions, id: \.line) { transaction in
+                    TransactionView(transaction: transaction)
+                }
             }
         }
         
